@@ -30,6 +30,7 @@ public class CarPostStoreClient {
         restTemplate.postForEntity(USER_STORE_SERVICE_URI, newUser, OwnerPostDTO.class);
     }
 
+
     public void changeCarForSaleClient(CarPostDTO carPostDTO, String id){
         restTemplate.put(POSTS_STORE_SERVICE_URI+"/car/"+id,carPostDTO,CarPostDTO.class);
     }
